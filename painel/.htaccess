@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^usuarios(.*)$ index.php?pagina=usuarios [L]
+RewriteRule ^grupo_acessos(.*)$ index.php?pagina=grupo_acessos [L]
+RewriteRule ^acessos(.*)$ index.php?pagina=acessos [L]
+
+
+RewriteRule ^situacao(.*)$ index.php?pagina=situacao [L]
+RewriteRule ^pagar(.*)$ index.php?pagina=pagar [L]
+RewriteRule ^formas_pgto(.*)$ index.php?pagina=formas_pgto [L]
+RewriteRule ^frequencias(.*)$ index.php?pagina=frequencias [L]
+RewriteRule ^funcionarios(.*)$ index.php?pagina=funcionarios [L]
+RewriteRule ^contemplados(.*)$ index.php?pagina=contemplados [L]
+RewriteRule ^cargos(.*)$ index.php?pagina=cargos [L]
+RewriteRule ^parecer(.*)$ index.php?pagina=parecer [L]
+RewriteRule ^categoria_ato(.*)$ index.php?pagina=categoria_ato [L]
+
+RewriteRule ^empresas(.*)$ index.php?pagina=empresas [L]
+RewriteRule ^setor(.*)$ index.php?pagina=setor [L]
+RewriteRule ^tarefas(.*)$ index.php?pagina=tarefas [L]
+RewriteRule ^anotacoes(.*)$ index.php?pagina=anotacoes [L]
+RewriteRule ^acompanhamento(.*)$ index.php?pagina=acompanhamento [L]
+RewriteRule ^geral(.*)$ index.php?pagina=geral [L]
