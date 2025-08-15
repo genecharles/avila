@@ -15,12 +15,6 @@ $banco = 'avila';
 $usuario = 'root';
 $senha = '';
 
-
-/**$servidor = 'localhost';
-$banco = 'genech04_avila';
-$usuario = 'genech04_avila';
-$senha = 'avila@#)d3r';**/
-
 try {
 	$pdo = new PDO("mysql:dbname=$banco;host=$servidor;charset=utf8mb4", "$usuario", "$senha");
 } catch (Exception $e) {
