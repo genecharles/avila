@@ -26,7 +26,7 @@ try {
 //variaveis globais
 $nome_sistema = 'Nome Sistema';
 $email_sistema = 'rodrigo_avila@gmail.com';
-$telefone_sistema = '(95)99112-6832';
+$telefone_sistema = '(95)99156-3531';
 
 $query = $pdo->query("SELECT * from config");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
