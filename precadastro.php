@@ -13,8 +13,6 @@ $lotado = $_POST['lotado'];
 $senha = '1234@';
 $senha_crip = sha1($senha);
 
-
-//$obs = $_POST['obs'];
 $id = $_POST['id'];
 
 $cpf = str_replace('.', '', $cpf);
@@ -78,9 +76,6 @@ if(@$_FILES['foto']['name'] != ""){
 	}
 }
 
-
-
-//if($id == ""){
 $query = $pdo->prepare("INSERT INTO $tabela SET nome = :nome, cpf = :cpf, dt_nasc = '$data_nasc', email = :email, senha = '$senha', senha_crip = '$senha_crip', nivel = '$nivel', ativo = 'Não', foto = '$foto', telefone = :telefone, data = curDate(), endereco = :endereco, lotado = '$lotado' ");
 
 $query->bindValue(":nome", "$nome");
@@ -92,20 +87,6 @@ $query->bindValue(":endereco", "$endereco");
 $query->execute();
 $ult_id = $pdo->lastInsertId();
 
-	
-/*}else{
-	$query = $pdo->prepare("UPDATE $tabela SET nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, endereco = :endereco, cargo = 3, data_cad = curDate(), data_nasc ='$data_nasc', obs = '', foto = '$foto', ativo = 'Não' WHERE id = '$id'");
-
-$query->bindValue(":nome", "$nome");
-$query->bindValue(":cpf", "$cpf");
-$query->bindValue(":telefone", "$telefone");
-$query->bindValue(":email", "$email");
-$query->bindValue(":endereco", "$endereco");
-
-$query->execute();
-
-
-}*/
 
 echo 'Realizado com sucesso, aguardar confirmação do CSE!'; 
 
